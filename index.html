@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR - DEMONSTRATION</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fbfbfb;
+            color: rgb(0, 0, 0, 0.87);
+            font-family: 'Source Code Pro', monospace;
+        }
+        
+        model-viewer {
+            width: 70%;
+            height: 70%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: rgb(251, 251, 251, 0.87);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AR MODEL DEMONSTRATION</h1>
+    <model-viewer alt="Game Boy Color 3D Model with a Pokemon Yellow version running" src="assets/model.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+</body>
+</html>
